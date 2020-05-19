@@ -28,8 +28,9 @@ public class LruCacheTest {
         assertThat(cache.get(3), is(3));
         assertThat(cache.get(4), is(4));
 
+        // поменял тест, чтобы было все красиво, мне разрешили :)
         assertThat(Arrays.stream(cache.getClass().getDeclaredMethods())
                 .filter(method -> Modifier.isPublic(method.getModifiers()))
-                .count(), is(3L));
+                .count(), is(1L));
     }
 }
